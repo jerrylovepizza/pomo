@@ -1,0 +1,199 @@
+@import '../../styles/mixins';
+
+button {
+  outline: 0!important;
+  appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(74, 74, 74));
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+  border-image: initial;
+}
+
+.btn {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    background: none rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 8px 12px;
+    min-width: 70px;
+    border: none;
+    color: white;
+
+    &:hover {
+      opacity: 1;
+    }
+    
+    .icon {
+      margin-right: 5px;
+    }
+
+    &.btn-3 {
+      cursor: pointer;
+      border: none;
+      margin: 20px auto 0px;
+      padding: 0px 12px;
+      border-radius: 4px;
+      box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+      font-family: Arial;
+      font-size: 22px;
+      height: 55px;
+      color: rgb(240, 91, 86);
+      font-weight: bold;
+      width: 200px;
+      background-color: white;
+      transition: color 0.5s ease-in-out 0s;
+      
+    }
+
+    &.btn-2 {
+      border: none;
+      color: white;
+      margin: 0px;
+      border-radius: 4px;
+     
+      font-size: 16px;
+      padding: 2px 12px;
+      height: 28px;
+      cursor: pointer;
+      background: none;
+      box-shadow: none;
+      font-weight: 300;
+      
+      &.active {
+        border: none;
+        margin: 0px;
+        border-radius: 4px;
+        
+        font-size: 16px;
+        padding: 2px 12px;
+        height: 28px;
+        cursor: pointer;
+        background: none rgba(0, 0, 0, 0.15);
+        box-shadow: none;
+        color: white;
+        opacity: 1;
+        font-weight: bold;
+      }
+      
+    }
+}
+
+.icon {
+  color: inherit;
+  display: inline-block;
+
+  &.icon-1 {
+    width: 20px;
+
+  }
+}
+
+.hr {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1px;
+  margin-bottom: 40px!important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-page {
+  background: rgb(240, 91, 86);
+  min-height: 600px;
+  
+  .app-section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .app-header {
+    padding: 12px 0;
+    
+    width: 100%;
+    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .app-logo > a {
+    color: #fff;    
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+
+    .icon {
+      margin-right: 5px;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    margin-left:  auto;
+  }
+  
+  .cal-section {
+
+    .board {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px 0px 30px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      width: 100%;
+
+      .board-btn-group {
+        justify-content: center;
+      }
+
+      .board-content {
+        text-align: center;
+      }
+
+      .timer {
+        font-size: 120px;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #fff;
+      }
+
+      
+    }
+    
+  }
+}
