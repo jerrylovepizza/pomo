@@ -17,7 +17,7 @@ The Pomodoro Technique is created by Francesco Cirillo for a more productive way
  * Color transition to switch moods between work time and rest time
  * Audio notification at the end of a timer period
  * Customizable timer intervals to suit your preference
- ## 🍌 Technologies:
+ #### Technologies:
 - [x] Node
 - [x] React
 - [x] JavaScript
